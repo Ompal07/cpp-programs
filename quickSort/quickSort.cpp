@@ -66,54 +66,6 @@ void quickSort(int arr[], int low, int high){
 }
 
 
-void quickSort(int arr[], int numberOfElements){
-    int pivot = arr[0];
-    int low = 0;
-    int high = numberOfElements-1;
-    int index = 0;
-
-    int temp =0; //used for the swapping
-
-    // if (numberOfElements%2 == 0){
-    //     pivot = numberOfElements /2;
-    //     pivot -= 1;
-    // }else{
-    //     pivot = (numberOfElements /2 );
-    // }
-
-    while (index <= high){
-        if(arr[index]> pivot){
-            temp = arr[index];
-            arr [index ] = arr[high];
-            arr[high] = temp;
-
-            high--;
-        }else if( arr[index] == pivot){
-            index++;
-        }else{
-            temp = arr[index];
-            arr[index] = arr[low];
-            arr[low] = temp;
-
-            low++;
-            index++;
-        }
-    }
-    
-    cout<< "Unsorted Array: ";
-    printArray(arr, numberOfElements);
-
-    if(low>1){
-        quickSort(arr, 0, low-1);
-    }
-
-    if (high < numberOfElements - 2){
-        quickSort(arr, high+1, numberOfElements-1);
-    }
-
-    cout<< "Sorted Array:   ";
-    printArray(arr, numberOfElements);
-}
 
 
 int main()

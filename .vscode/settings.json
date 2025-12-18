@@ -1,0 +1,10 @@
+{"terminal.integrated.profiles.windows": {
+  "UCRT64": {
+    "path": "C:\\msys64\\ucrt64.exe"
+  },
+  "MinGW64": {
+    "path": "C:\\msys64\\mingw64.exe"
+  }
+}
+
+}

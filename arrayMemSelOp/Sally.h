@@ -3,8 +3,11 @@
 
 class Sally{
         public:
-        Sally();
+        Sally(int a, int b);
         ~Sally();
+
+        void printVariable();
+
         void printShiz();
         void printCrap();
 
@@ -12,6 +15,8 @@ class Sally{
 
     protected:
     private:
+        int regVar;
+        const int constVar;
 };
 
 #endif

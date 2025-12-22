@@ -2,8 +2,15 @@
 #include "Sally.h"
 using namespace std;
 
-Sally::Sally(){
+Sally::Sally(int a, int b)
+: regVar(a), constVar(b) // member initialiser for regular and const variables
+{
     cout << "i am the constructor;" << endl;
+}
+
+
+void Sally::printVariable(){
+    cout << "regular variable is: "<< regVar <<"\nconst variable is: "<< constVar << endl;
 }
 
 void Sally::printCrap(){
